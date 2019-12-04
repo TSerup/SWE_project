@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 FROM postgres:latest 
 
 ENV POSTGRES_PASSWORD postgres 
@@ -5,3 +6,12 @@ ENV POSTGRES_DB testdb
  
 COPY init.sql /docker-entrypoint-initdb.d/
 
+=======
+FROM postgres:latest 
+
+ENV POSTGRES_PASSWORD postgres 
+ENV POSTGRES_DB testdb
+ 
+COPY init.sql /docker-entrypoint-initdb.d/
+
+>>>>>>> 4c7f03ef6b0aa6e474dd380893c4fb3dca724074

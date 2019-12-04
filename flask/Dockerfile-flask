@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 FROM python:3.6-onbuild
 
 ENTRYPOINT ["python"]
+=======
+FROM python:3.6-onbuild
+
+ENTRYPOINT ["python"]
+>>>>>>> 4c7f03ef6b0aa6e474dd380893c4fb3dca724074
 CMD ["app.py"]
