@@ -5,7 +5,7 @@ services:
         container_name: flask
         build:          # Create image from Dockerfile
             context: ./flask    # Dockerfile location
-            dockerfile: Dockerfile  # Dockerfile name
+            dockerfile: Dockerfile-flask  # Dockerfile name
         volumes:
             - ./flask:/usr/src/app  # Update app.py on every start
         networks:
@@ -27,7 +27,7 @@ services:
         container_name: db 
         build:          # Create from Dockerfile
             context: ./postgres # Dockerfile location
-            dockerfile: Dockerfile  # Dockerfile name
+            dockerfile: Dockerfile-psql  # Dockerfile name
         volumes:
             - db_data1:/var/lib/postgresql/data
         ports:
